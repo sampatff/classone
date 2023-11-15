@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,body{
+            margin: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+body{
+    background-color: rgb(236, 234, 234);
+}
+        .main-header-div{
+            text-align: center;
+            background-image: url(women.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 550px;
+            height: 700px;
+            width: 100%;
+            margin: 0px;
+}
+
+        
+.background-image {
+  /* Set your background image here */
+  background-image:  url(women.jpg);
+  /* Ensure the background image covers the container */
+  background-size: cover;
+  /* Set other styles as needed */
+
+  /* Apply a filter to the background image */
+  filter: brightness(50%) contrast(120%) grayscale(20%);
+}
+
+
+        .header-manu{
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+
+        .header-manu a {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            float: left;
+            margin-top: -5px;
+            margin-left: 20px;
+            font-size: 2vw;
+        }
+        
+        .header-manu-text{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(0, 255, 213);
+        }
+
+        .manu-ul{
+            float: right;
+            margin-right: 18%;
+            margin-top: -8px;
+            cursor: pointer;
+
+        }
+
+        .manu-ul ul li{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            float: left;
+            padding: 15px;         
+            list-style-type: none;
+        }
+
+        .manu-ul ul li:hover{
+            color: rgb(0, 255, 213);
+        }
+
+        .hover-i{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(219, 219, 219);
+        }
+
+        .hover-i:hover{
+            color: rgb(206, 206, 206);
+        }
+
+        .manu-bt{
+            float: right;
+            background-color:  rgb(2, 226, 189);
+            border: 1px solid  rgb(2, 226, 189);
+            font-size: 12px; 
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            border-radius: 5px;
+            margin-right: -25%;
+            height: 40px;
+            width: 112px;
+            cursor: pointer;
+        }
+
+        .header-text-center{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: aliceblue;
+            font-size: 4vw;
+            margin-top: 10%;
+        }
+
+        .header-text-center p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(181, 189, 196);
+            font-size: 2vw;
+            margin-top: 1%;
+        }
+
+        .header-bar{
+            background-color: rgba(255, 255, 255, 0.507);
+            height: 80px;
+            border-radius: 8px;
+            width: 85%;
+            margin: auto;
+        }
+
+        .input{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            float: left;
+            margin-top: 24px;
+            margin-right: 16px;
+            border: 0px solid white;
+            border-radius: 5px;
+            color:  rgb(153, 160, 165);
+            height: 35px;
+            width: 280px;
+            margin-left: 2%;
+        }
+
+        .location-bar{
+            float: left;
+            margin-top: 24px;
+            border: 0px solid white;
+            color:  rgb(153, 160, 165);
+            border-radius: 5px;
+            margin-right: 16px;
+            height: 35px;
+            width: 200px;
+            margin-left: 2%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .input-op{
+            float: left;
+            margin-top: 24px;
+            border: 0px solid white;
+            border-radius: 5px;
+            margin-right: 16px;
+            height: 35px;
+            width: 110px;
+            margin-left: 2%;
+            color:  rgb(153, 160, 165);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .bt-srch{
+            float: left;
+            margin-top: 24px;
+            background-color: rgb(2, 226, 189);
+            border: 1px solid  rgb(2, 226, 189);
+            border-radius: 5px;
+            height: 35px;
+            width: 110px;
+            margin-left: 2%;
+            color: black;
+            cursor: pointer ;
+        }
+
+        .bt-srch:hover{
+            background-color: rgb(5, 207, 174);
+            border: 1px solid rgb(5, 207, 174);
+        }
+
+        .buy-div{
+            height: 200px;
+            border-radius: 8px;
+            margin-top: 155px;
+            width: 86%;
+            text-align: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .div-a {
+            float: left;
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            width: 144px;
+            background-color: rgb(255, 255, 255);
+            margin: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+            border-radius: 8px;
+            transition-duration: .18s;
+            transition-delay: .1s;
+        }
+
+        .div-a:hover{
+            margin-top: -20px;
+            background-color: rgb(7, 255, 214);
+        }
+
+        .div-a:hover .buy-logo {
+            background-image: url(white.png);
+            
+        }
+
+        .div-a:hover .a-text{
+            color: white;
+        }
+
+        .div-a:hover .a-bt{
+            background-color: rgb(1, 199, 166);
+            color: white
+        }
+
+        .buy-logo{
+            height: 60px;
+            background-image: url(smilee.png);
+            background-size: 60px 60px;
+            color: white;
+            width: 60px;
+            margin: auto;
+            margin-top: 10px;
+            transition-duration: .18s;
+            transition-delay: .1s;
+        }
+
+
+        .a-text {
+            text-align: center;
+            width: 144px;
+            margin-top: 20px;
+            color:  rgb(153, 160, 165);
+            transition-duration: .18s;
+            transition-delay: .1s;
+        }
+
+        .ro{
+            transform: rotate(180deg);
+            margin-top: -17px;
+            margin-left: 48px;
+        }
+
+        .a-bt{
+            margin-top: 0px;
+            width: 70px;
+            border-radius: 10px;
+            height: 22px;
+            border: 0px;
+            background-color: hsl(0, 0%, 88%);
+            transition-duration: .18s;
+            transition-delay: .1s;
+        }
+
+        .center-top{
+            background-color: black;
+            width: 70%;
+            height: 500px;
+        }
+
+        .ul-two{
+            float: d;
+            color: red;
+        }
+
+        .ul-two{
+            display: block;
+        }
+
+        .ul-two li{
+            display: none;
+        }
+
+        .center-body-slider{
+            position: absolute;
+            background-color: red;
+            height: 400px;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .center-body-slider p{
+            float: left;
+        }
+
+        .slider-one{
+            position: relative;
+            background-color: aliceblue;
+            margin-top: 8%;
+            height: 70%;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        .slider-iimgs{
+            float: left;
+            width: 300px;
+            padding: -200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header-div"> <br>
+        <div class="header-manu">
+            <a href="#"><P><b>CLASSY</b><B class="header-manu-text">ADS</B></P></a>
+            <div class="manu-ul">
+                <ul>
+                    <li>Home</li>
+                    <li>Ads</li>
+                    <li>About <p class="ro">^</p>
+                        <ul class="ul-two"> 
+                            <li>a</li> <br>
+                            <li>a</li> <br>
+                            <li>a</li> <br>
+                        </ul>
+                    </li>
+                    <li>Blog</li>
+                    <li>Contect</li>
+                    <li class="hover-i">|</li>
+                    <li>Log in</li>
+                    <li>Register</li>
+                </ul>
+                <button class="manu-bt">+ Post an Ad</button>
+            </div>
+        
+        </div>
+
+        <div class="header-text-center">Largest Classifieds In The World
+            <p>You can buy, sell anything you want.</p>
+        </div>
+
+        <div class="header-bar">
+            <form>         
+            <input type="text" class="input" placeholder="    What are yuo looking for?">
+            <input type="text" class="location-bar" placeholder="    location">
+            <select class="input-op">
+                <option>All categories</option>
+                <option>Cars</option>
+                <option>Books</option>
+                <option>Others</option>
+            </select>
+        <input type="submit" value="Sarch" class="bt-srch">
+        </form>  
+        </div>
+        <div class="buy-div">
+            <div  class="div-a"><div class="buy-logo"></div> <p class="a-text">Real Estate</p> <button class="a-bt">200</button></div>
+            <div  class="div-a"><div class="buy-logo"></div> <p class="a-text">Books & Magazines</p> <button class="a-bt">1400</button></div>
+            <div  class="div-a"><div class="buy-logo"></div> <p class="a-text">Furniture</p> <button class="a-bt">1200</button></div>
+            <div  class="div-a"><div class="buy-logo"></div> <p class="a-text">Electronics</p> <button class="a-bt">3500</button></div>
+            <div  class="div-a"><div class="buy-logo"></div> <p class="a-text">Cars & Vehicles</p> <button class="a-bt">3000</button></div>
+            <div  class="div-a"><div class="buy-logo"></div> <p class="a-text">Other</p> <button class="a-bt">200</button></div>
+        </div>
+        <div class="center-body-slider">
+            <p>Featured Ads</p>
+            <div class="slider-one">
+                <div class="slider-iimgs">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE3cuXEnTofdHgLORn95DRceHi64_3bQX73bZGxjiCMOIH1HDp" alt="" height="175px" width="206x">
+                </div>
+                <div class="slider-iimgs">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE3cuXEnTofdHgLORn95DRceHi64_3bQX73bZGxjiCMOIH1HDp" alt="" height="175px" width="206x">
+                </div>
+                <div class="slider-iimgs">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE3cuXEnTofdHgLORn95DRceHi64_3bQX73bZGxjiCMOIH1HDp" alt="" height="175px" width="206x">
+                </div>
+                <div class="slider-iimgs">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE3cuXEnTofdHgLORn95DRceHi64_3bQX73bZGxjiCMOIH1HDp" alt="" height="175px" width="206x">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

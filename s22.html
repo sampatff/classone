@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .slider-container {
+        text-align: center;
+        position: relative;
+      }
+
+      button {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+        <img id="slideimg" src="aaimgone.jpg" height="500px" width="100%">
+    </div>
+
+    <script>
+      let images = ['aaimgone.jpg', 'aaimgtwo.png', 'aaimgth.png'];
+      let i = 0;
+      let imgs = document.getElementById("slideimg");
+
+      function nextSlide(){
+        i = (i + 1) % images.length;
+        imgs.src = images[i];
+      }
+
+      function startSlider() {
+      setInterval(nextSlide, 2000);
+    }
+    
+    startSlider();
+    </script>
+    </body>
+    </html>
